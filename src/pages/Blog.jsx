@@ -8,6 +8,7 @@ const Blog = () => {
           <h1 className="font-bold text-white text-3xl">BLOG</h1>
         </div>
       </div>
+      <p>.</p>
       <BottomBar />
     </>
   );
