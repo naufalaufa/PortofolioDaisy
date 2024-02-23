@@ -37,7 +37,7 @@ const Personal = () => {
             </div>
           </div>
           <div>
-            <p className="w-[400px] md:w-[300px] lg:w-[500px] mt-2 font-extralight p-10 ">
+            <p className="w-[400px] md:w-[300px] md:ml-20 lg:w-[500px] mt-2 font-extralight p-10 ">
               Hello , my name is
               <span className="font-bold"> Mochamad Naufal Aufa Rifqi</span> you
               can call me opal hehe. Selamat datang di portofolio saya! Saya
@@ -54,10 +54,10 @@ const Personal = () => {
               </span>
             </button>
             <section>
-              <h1 className="text-5xl ml-2 font-semibold mt-20 ">
+              <h1 className="text-5xl ml-8 p-2 md:ml-20 font-semibold mt-20 ">
                 SOCIAL MEDIA ALERT
               </h1>
-              <div className="flex items-center mt-8 gap-3 ml-2">
+              <div className="flex items-center mt-8 gap-3  md:ml-20 ml-8">
                 <div className="bg-white p-2 text-black rounded-md hover:bg-black hover:text-white shadow-sm shadow-slate-400 cursor-pointer">
                   <a
                     target="_blank"
