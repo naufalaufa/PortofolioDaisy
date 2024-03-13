@@ -5,7 +5,7 @@ import Image4 from "../assets/images/4.jpg";
 
 const CarouselWalpapper = () => {
   return (
-    <div className="carousel carousel-center max-w-md p-8 md:hidden hidden sm:hidden space-x-4 bg-neutral rounded-box ml-9 lg:flex ">
+    <div className="carousel carousel-center max-w-md p-8 md:hidden hidden sm:hidden space-x-4 bg-neutral rounded-box ml-9 lg:flex z-[99999] ">
       <div className="carousel-item">
         <img src={Image1} className="rounded-box h-[520px]" />
       </div>

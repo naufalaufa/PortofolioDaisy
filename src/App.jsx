@@ -1,7 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Blog, Error, LandingHome, Personal, Project } from "./pages";
+import Navbar from "./components/Navbar";
+import { useContext } from "react";
+import { GlobalContext } from "./context/GlobalContext";
 
 const App = () => {
+  const { dark } = useContext(GlobalContext);
   const router = createBrowserRouter([
     {
       path: "/",
@@ -27,7 +31,14 @@ const App = () => {
   ]);
   return (
     <>
-      <div>
+      <Navbar />
+      <div
+        className={
+          dark
+            ? "bg-black text-white duration-100"
+            : "bg-white text-black duration-100"
+        }
+      >
         <RouterProvider router={router} />
       </div>
     </>

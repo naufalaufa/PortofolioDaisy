@@ -5,11 +5,12 @@ import { BiSolidMessageDots } from "react-icons/bi";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import ResumeNaufal from "../../public/resume naufall.pdf";
 
 const Personal = () => {
   return (
     <>
-      <div className="bg-black text-white min-h-screen">
+      <div className="mt-[42px] min-h-screen">
         <div>
           <h1 className="text-5xl md:text-9xl font-semibold mb-5 relative animate-pulse">
             PORTOFOLIO
@@ -25,19 +26,26 @@ const Personal = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen place-items-center">
-          <div className="ml-2 text-2xl font-semibold bg-white p-2 shadow-sm shadow-slate-700 rounded-full h-[360px] w-[360px] grid whitespace-nowrap place-items-center relative md:w-[500px] md:h-[500px]   ">
+          <div className="ml-2 text-2xl font-semibold bg-white  shadow-sm shadow-slate-700 rounded-full h-[360px] w-[360px] grid whitespace-nowrap place-items-center relative md:w-[500px] md:h-[500px]   ">
             <img
               src={Image2}
               alt={Image2}
-              className="absolute rounded-full aspect-square object-contain"
+              className="absolute rounded-full aspect-square object-contain w-[500px]"
             />
-            <div className="absolute top-0 w-full h-full grid hover:bg-black/30 duration-100 cursor-pointer bg-black/10  place-content-center place-items-center rounded-full">
-              <p className="text-sm mt-9 ">Naufal Aufa</p>
-              <p className="text-xs ">Front End Developer</p>
+            <div className="absolute top-0 w-full h-full grid  hover:bg-black/30 duration-100 cursor-pointer bg-black/10  place-content-center place-items-center rounded-full">
+              <p className="text-sm mt-9 text-white ">Naufal Aufa</p>
+              <p className="text-xs text-white">Front End Developer</p>
+              <a
+                href={ResumeNaufal}
+                target="_blank"
+                className="bg-white p-2 rounded-lg my-2 text-black text-sm hover:bg-black hover:text-white duration-100"
+              >
+                View Resume
+              </a>
             </div>
           </div>
           <div>
-            <p className="w-[400px] md:w-[300px] md:ml-20 lg:w-[500px] mt-2 font-extralight p-10 ">
+            <p className="w-[400px] md:w-[300px] md:ml-20 lg:w-[500px] mt-2 text-sm p-10 ">
               Hello , my name is
               <span className="font-bold"> Mochamad Naufal Aufa Rifqi</span> you
               can call me opal hehe. Selamat datang di portofolio saya! Saya
@@ -86,9 +94,17 @@ const Personal = () => {
         </div>
 
         <div>
-          <h2 className="text-6xl text-right ml-9 md:text-9xl md:text-right font-semibold   rounded mt-4 relative">
+          <h2 className="text-6xl text-right ml-9 mr-3 md:text-9xl md:text-right font-semibold rounded mt-4 relative">
             2024
           </h2>
+          <div className="w-[300px] text-sm lg:w-[800px] my-5 ml-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+              veniam fuga dicta molestias, ad vero nostrum earum molestiae magni
+              nam animi impedit itaque tenetur? Officia, ea earum. Veniam, quas
+              soluta.
+            </p>
+          </div>
         </div>
         <TechStack />
         <BottomBar />

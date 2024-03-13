@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Main = () => {
   return (
     <>
-      <div className="min-h-screen grid place-content-center w-[100px] sm:w-[300px] m-auto">
+      <div className="min-h-screen grid place-content-center w-[100px] sm:w-[300px] m-auto z-[999999]">
         <div className="grid gap-2">
           <div className="font-bold text-lg whitespace-nowrap sm:text-4xl flex gap-2 items-center ">
             <h1>Welcome To</h1>
@@ -15,14 +15,14 @@ const Main = () => {
             </div>
           </div>
           <h2 className="font-bold text-xl ">Portofolio</h2>
-          <p className="text-xs sm:text-sm ">
-            <div className="bg-white rounded my-1 p-2 shadow-sm shadow-slate-700 ">
+          <span className="text-xs sm:text-sm ">
+            <p className="bg-white rounded my-1 p-2 shadow-sm shadow-slate-700 text-black ">
               Hi iam Naufal Iam Front End Developer
-            </div>
+            </p>
             focus in user interfaces and user experience , familiar with using
             technologies such as react js , tailwind css, javascript, html, css.
             Live in Jakarta Indonesia.
-          </p>
+          </span>
         </div>
         <NavLink
           to="/personal"

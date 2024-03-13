@@ -6,17 +6,15 @@ import { FaGithub } from "react-icons/fa";
 const Project = () => {
   return (
     <>
-      <div className="bg-black p-8">
-        <h1 className="text-white font-bold text-3xl text-center p-10">
-          PROJECT
-        </h1>
+      <div className=" p-8">
+        <h1 className="font-bold text-3xl text-center p-10">PROJECT</h1>
       </div>
-      <div className="p-10 bg-black grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="p-10  grid grid-cols-1 md:grid-cols-3 gap-5">
         {dataProject?.map((item) => {
           const { id, image, text, url, article, github } = item;
           return (
             <>
-              <div key={id} className="bg-white p-5 rounded-lg">
+              <div key={id} className=" p-5 rounded-lg">
                 <div>
                   <img src={image} alt={image} />
                 </div>

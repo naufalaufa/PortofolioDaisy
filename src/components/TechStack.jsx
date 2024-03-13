@@ -2,6 +2,8 @@ import { FaReact } from "react-icons/fa6";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { SiTailwindcss } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { SiDaisyui } from "react-icons/si";
 
 const TechStack = () => {
   return (
@@ -26,6 +28,12 @@ const TechStack = () => {
         </span>
         <span className="shadow-sm shadow-slate-100 hover:bg-white">
           <SiRedux className="w-[100px] h-[100px] p-4 text-blue-700 hover:text-black cursor-pointer" />
+        </span>
+        <span className="shadow-sm shadow-slate-100 hover:bg-white">
+          <SiDaisyui className="w-[100px] h-[100px] p-4 text-red-300 hover:text-black cursor-pointer" />
+        </span>
+        <span className="shadow-sm shadow-slate-100 hover:bg-white">
+          <SiNextdotjs className="w-[100px] h-[100px] p-4 text-white hover:text-black cursor-pointer" />
         </span>
       </section>
     </div>
